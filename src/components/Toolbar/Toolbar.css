@@ -1,0 +1,36 @@
+#toolbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkred;
+}
+
+#header{
+    color: lightgoldenrodyellow;
+}
+/*#toolbarContainer > * {*/
+/*    flex: 1; */
+/*}*/
+
+.iconButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    color: transparent;
+}
+
+#firstButton {
+    background-image: url('../../../public/list-bold.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#thirdButton {
+    background-image: url('../../../public/basket-bold.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

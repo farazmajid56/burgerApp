@@ -19,7 +19,7 @@ const BuildControls=(props)=>{
                     return <BuildControl label={ctrl.label} disable={props.disable[ctrl.type]} add={()=>props.add(ctrl.type)} remove={()=>props.remove(ctrl.type)}/>
                 })
             }
-            <button className="OrderButton" onClick={props.showSummary}>ORDER NOW</button>
+            <button className="OrderButton" onClick={props.showSummary} disabled={props.price <= 0}>ORDER NOW</button>
             {/* <BuildControl label="Meat"/>
             <BuildControl label="Meat"/>
             <BuildControl label="Meat"/> */}

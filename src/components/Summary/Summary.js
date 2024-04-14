@@ -16,6 +16,9 @@ const Summary=(props)=>{
             <ul>
                 {list}
             </ul>
+            <p>Do you wish to proceed to Checkout ?</p>
+            <button id="cancel" className="summaryButton" onClick={props.hideSummary}>Cancel</button>
+            <button id="continue" className="summaryButton" onClick={props.hideSummary}>Continue</button>
         </div>
     )
 }

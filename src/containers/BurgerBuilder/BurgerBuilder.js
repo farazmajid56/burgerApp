@@ -52,12 +52,17 @@ class BurgerBuilder extends Component{
 
 
     }
-showSummary=()=>{
-    this.setState({
-        goingToPurchase:true
-    })
-}
-        
+    showSummary=()=>{
+        this.setState({
+            goingToPurchase:true
+        })
+    }
+
+    hideSummary=()=>{
+        this.setState({
+            goingToPurchase:false
+        })
+    }
 
     render(){
         let flag={};
@@ -73,7 +78,7 @@ showSummary=()=>{
         }
     return(
         <Wrapper>
-            {this.state.goingToPurchase && <Summary ing={this.state.ingredients}/>}
+            {this.state.goingToPurchase && <Summary ing={this.state.ingredients} hideSummary={this.hideSummary}/>}
            <Burger ingredients={this.state.ingredients}/>
             <BuildControls showSummary={this.showSummary} disable={flag} price={this.state.totalPrice} add={this.addIngredients} remove={this.removeIngredients}/>
         </Wrapper>

@@ -1,0 +1,43 @@
+.sideDrawer {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #fff;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease-in-out;
+}
+
+.sideDrawer.open {
+    left: 0;
+}
+
+.sideDrawer nav {
+    padding: 20px;
+}
+
+.sideDrawer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sideDrawer nav ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sideDrawer nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.drawerTop {
+    text-align: center;
+}
+
+.drawerTop img {
+    max-width: 100%;
+    height: auto;
+}

@@ -35,3 +35,19 @@
         left: calc(50% - 250px);
     }
 }
+
+.summaryButton {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cancel {
+    color: indianred;
+}
+
+#continue {
+    color: darkseagreen;
+}

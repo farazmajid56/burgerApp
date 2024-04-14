@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkred;
+    background-color: black;
 }
 
 #header{
-    color: lightgoldenrodyellow;
+    color: whitesmoke;
 }
 /*#toolbarContainer > * {*/
 /*    flex: 1; */
